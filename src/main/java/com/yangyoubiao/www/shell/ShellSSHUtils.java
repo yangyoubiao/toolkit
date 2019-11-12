@@ -453,7 +453,7 @@ public class ShellSSHUtils {
 			shell.append("ifconfig \n ");
 			shell.append("java -version \n ");
 
-			String str=ShellSSHUtils.getInstance().execRemote("132.97.110.251", "root", "GZDX_cdh123!@#", shell.toString(),
+			String str=ShellSSHUtils.getInstance().execRemote("", "", "", shell.toString(),
 					(line) -> {
 						System.out.println("测试调用远程命令：" + line);
 					});

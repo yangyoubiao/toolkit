@@ -442,9 +442,9 @@ public final class FTPUtils {
 	}
 
 	public static void main(String args[]) throws Exception {
-		String host = "132.97.110.254";
-		String ftpUser = "ftpadmin";
-		String ftpPsw = "123456";
+		String host = "";
+		String ftpUser = "";
+		String ftpPsw = "";
 		String localPath = "C:\\Users\\Administrator\\Desktop\\";
 		String localFileName = "yyb1.txt";
 		long start = System.currentTimeMillis();
