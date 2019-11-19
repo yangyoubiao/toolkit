@@ -99,6 +99,14 @@
 		</dependency>
 		<!-- shell end -->
 
+		<!-- encryption start 对称加密有两种实现，1.jbk，2.bouncycastle【BC】 -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+		</dependency>
+		<!-- encryption end -->
+
 	</dependencies>
 
 
