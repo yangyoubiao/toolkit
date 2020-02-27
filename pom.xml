@@ -11,6 +11,7 @@
 	<!-- 例如数据库：建立新的包com.yangyoubiao.www.db,关于oracle、mysql...在db下建立子包 -->
 	<!-- 如需测试，则建立下一层test，进行测试、告知工具类的用法 -->
 
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
