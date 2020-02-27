@@ -39,11 +39,8 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.15</version>
 		</dependency>
-		<dependency>
-			<groupId>xerces</groupId>
-			<artifactId>xerces</artifactId>
-			<version>2.4.0</version>
-		</dependency>
+		<!-- <dependency> <groupId>xerces</groupId> <artifactId>xerces</artifactId> 
+			<version>2.4.0</version> </dependency> -->
 		<!-- poi文档处理 end -->
 
 		<!-- HttpClient start -->
@@ -107,8 +104,59 @@
 		</dependency>
 		<!-- encryption end -->
 
+		<!-- hbase start -->
+		<!-- <dependency> <groupId>org.apache.hbase</groupId> <artifactId>hbase-client</artifactId> 
+			<version>1.0.0-cdh5.4.2</version></dependency> <dependency> <groupId>org.apache.hbase</groupId> 
+			<artifactId>hbase-server</artifactId> <version>1.0.0-cdh5.4.2</version> </dependency> 
+			<dependency> <groupId>org.apache.hadoop</groupId> <artifactId>hadoop-client</artifactId> 
+			<version>2.6.0-cdh5.4.2</version> </dependency> -->
+		<!-- hbase end -->
+
+		<!-- impala start -->
+		<!-- https://mvnrepository.com/artifact/com.cloudera/ImpalaJDBC41 -->
+		<dependency>
+			<groupId>com.cloudera</groupId>
+			<artifactId>ImpalaJDBC41</artifactId>
+			<version>2.6.3</version>
+		</dependency>
+		<!-- impala end -->
+
+		<!-- phoenix-core start -->
+		<dependency>
+			<groupId>org.apache.phoenix</groupId>
+			<artifactId>phoenix-core</artifactId>
+			<version>4.14.2-HBase-1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.lmax</groupId>
+			<artifactId>disruptor</artifactId>
+			<version>3.4.2</version>
+		</dependency>
+
+		<!-- junit 单元测试 start -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- junit 单元测试 end -->
+
+		<dependency>
+			<groupId>jdk.tools</groupId>
+			<artifactId>jdk.tools</artifactId>
+			<version>1.8</version>
+			<scope>system</scope>
+			<systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
+		</dependency>
 	</dependencies>
 
-
+	<!--依赖 的仓库配置 -->
+	<repositories>
+		<!-- 主要是关于cdh集群 -->
+		<!-- <repository> <id>cloudera</id> <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url> 
+			</repository> -->
+	</repositories>
 
 </project>

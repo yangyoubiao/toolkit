@@ -8,7 +8,6 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.mortbay.log.Log;
 
 import it.sauronsoftware.ftp4j.FTPClient;
 import it.sauronsoftware.ftp4j.FTPFile;
@@ -442,14 +441,14 @@ public final class FTPUtils {
 	}
 
 	public static void main(String args[]) throws Exception {
-		String host = "";
-		String ftpUser = "";
-		String ftpPsw = "";
+		String host = "183.63.172.108";
+		String ftpUser = "ftpadmin";
+		String ftpPsw = "ftpadmin";
 		String localPath = "C:\\Users\\Administrator\\Desktop\\";
-		String localFileName = "yyb1.txt";
+		String localFileName = "c.json";
 		long start = System.currentTimeMillis();
-		FTPClient client = FTPUtils.ftpConn(host, 21, "UTF-8", ftpUser, ftpPsw);
-		FTPUtils.upload(client, localPath + localFileName, "download");
+		FTPClient client = FTPUtils.ftpConn(host, 10122, "UTF-8", ftpUser, ftpPsw);
+		FTPUtils.upload(client, localPath + localFileName, "/dataExplore/upload");
 		FTPUtils.closeConn(client);
 		long end = System.currentTimeMillis();
 		System.out.println(end - start);
